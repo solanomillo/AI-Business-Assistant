@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 from agents.analysis_agent import crear_agente
 from services.data_store import DataStore
 
@@ -216,9 +215,8 @@ if st.session_state.df is not None:
 
                     if "429" in error_text or "RESOURCE_EXHAUSTED" in error_text:
                         texto = (
-                            "⚠️ Se alcanzó el límite diario de la API (Free Tier).\n\n"
-                            "Por favor espera unos minutos o activa facturación "
-                            "en Google AI Studio para continuar usando el asistente."
+                            "⚠️ Se alcanzó el límite diario de la API.\n\n"
+                            "Por favor espera unos minutos"
                         )
 
                         st.error(texto)

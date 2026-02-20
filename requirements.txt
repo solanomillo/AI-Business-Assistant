@@ -6,3 +6,5 @@ openpyxl
 langchain-community
 langchain-google-genai
 matplotlib
+reportlab
+langchain-groq
